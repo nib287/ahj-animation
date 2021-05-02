@@ -1,0 +1,217 @@
+@import "nullstyle.sass"
+
+html    
+    padding: 20px
+    font-family: Arial, Helvetica, sans-serif
+
+.collapse
+    margin-bottom: 100px
+
+.collapse__button 
+    width: 100px
+    height: 40px
+    background-color: #2c56b3
+    border-radius: 10px
+    color: #ffffff
+    font-size: 18px
+    &:hover
+        background-color: #3262c9
+
+.collapse__wrapper
+    position: relative        
+
+.collapse__text 
+    box-sizing: border-box
+    margin-top: 10px
+    padding: 10px
+    width: 500px
+    border: 1px solid #3262c9
+
+.collapse__block
+    position: absolute
+    left: 0
+    bottom: -64px
+    z-index: 2
+    width: 500px
+    height: 64px
+    background-color: #ffffff
+    
+.collapse__closing
+    transform: translateY(-64px)
+    transition: transform 0.5s    
+
+.collapse__opening
+    transform: translateY(0px)
+    transition: transform 0.5s     
+
+.callback 
+    position: relative
+    width: 300px
+
+.callback__header 
+    display: flex
+    justify-content: space-between
+   
+.callback__close 
+    background-color: #ffffff
+
+.callback__wrapper-outer
+    width: 300px
+    height: 371px
+
+.callback__wrapper-inner
+    padding: 0 20px 20px 20px
+    
+.callback__form 
+    display: flex
+    flex-direction: column 
+
+.callback__text 
+    margin: 10px 0 10px 0
+    padding: 20px
+    height: 300px
+    resize: none
+    border: 1px solid black
+    border-radius: 20px
+
+.callback__send 
+    height: 30px
+    border: 1px solid #c7c2c2
+    border-radius: 10px
+
+.callback__button 
+    position: absolute
+    top: -8px
+    right: 5px
+    width: 40px
+    height: 40px
+    border-radius: 30px
+    background-color: red
+    box-shadow: 0 0 1px 2px #cc1e1e
+    
+.button__hover     
+    &:hover
+        transform: scale(1.4)
+        transition: transform 0.2s
+
+.callback__minimize
+    transform: scale(0)
+    transition: transform 0.2s
+        
+.callback__maximize
+    transform: scale(1)
+    transition: transform 0.2s
+
+.like
+    width: 300px
+    height: 500px    
+
+@keyframes like1  
+    0%
+        transform: translate(0,0)
+    
+    25%
+        transform: translate(-50px, -50px)
+        opacity: 0.8
+    50%
+        transform: translate(0px, -100px)
+    
+    75%
+        opacity: 0.5
+        transform: translate(50px, -150px)
+    
+    100%
+        opacity: 0
+        transform: translate(0px,-200px)
+
+@keyframes like2  
+    0%
+        transform: translate(0,0)
+    
+    25%
+        transform: translate(0, -50px)
+        opacity: 0.8
+    50%
+        transform: translate(50px, -100px)
+    
+    75%
+        opacity: 0.5
+        transform: translate(-50px, -150px)
+    
+    100%
+        opacity: 0
+        transform: translate(0px,-200px)
+                    
+@keyframes like3  
+    0%
+        transform: translate(0,0)
+    
+    25%
+        transform: translate(0, -50px)
+        opacity: 0.8
+    50%
+        transform: translate(-50px, -100px)
+    
+    75%
+        opacity: 0.5
+        transform: translate(50px, -150px)
+    
+    100%
+        opacity: 0
+        transform: translate(0px,-200px)
+                    
+@keyframes like4  
+    0%
+        transform: translate(0,0)
+    
+    25%
+        transform: translate(50px, -100px)
+        opacity: 0.8
+    50%
+        transform: translate(50px, -100px)
+    
+    75%
+        opacity: 0.5
+        transform: translate(-50px, -150px)
+    
+    100%
+        opacity: 0
+        transform: translate(0px,-200px)
+                    
+.like__button
+    width: 90px
+    height: 25px
+    color: #ffffff
+    background-color: #f01c1c
+    border-radius: 5px
+    
+.like__box
+    position: relative
+    z-index: 2
+    display: flex
+    width: 100px
+       
+.like__heart
+    position: absolute
+    top: -27px
+    left: 40px
+    color: #f01c1c 
+
+.animation1
+    animation: like1  0.5s 1 ease-out
+   
+.animation2
+    animation: like2  0.5s 1 ease-out
+   
+.animation3
+    animation: like3  0.5s 1 ease-out
+   
+.animation4
+    animation: like4  0.5s 1 ease-out
+   
+    
+
+            
+
+
+
